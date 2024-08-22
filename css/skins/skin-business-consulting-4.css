@@ -434,10 +434,10 @@ html .svg-stroke-color-hover-light svg:hover polygon {
 	background-image: linear-gradient(to right, #0052CC, #222529);
 }
 
-html .bg-color-primary,
+/* html .bg-color-primary,
 html .bg-primary {
 	background-color: #0052CC !important;
-}
+} */
 
 html .bg-color-hover-primary:hover,
 html .bg-hover-primary:hover {
