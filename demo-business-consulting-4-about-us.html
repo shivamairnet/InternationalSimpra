@@ -110,16 +110,16 @@
 .console-container {
  
   font-family:Khula;
-  font-size:3em;
+  font-size:2.5em;
   text-align:center;
-  height:100px;
-  width:300px;
+  height:50px;
+  width:400px;
   display:block;
   position:absolute;
   color:#0052CC;
-  top: 53px;;
+  top: 56px;;
   bottom:0;
-  left: 188px;;
+  left: 142px;;
   right:0;
   margin:auto;
   margin-top: 200px;
@@ -133,6 +133,19 @@
 }
 
 /* animation on cards */
+.containercardbody{
+	
+    /* margin: 0; */
+    /* padding: 0; */
+    /* min-height: 100vh; */
+    background: #333;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* font-family: consolas; */
+
+}
+
 .containercard{
     width: 1000px;
     position: relative;
@@ -148,6 +161,11 @@
     cursor: pointer;
 	background-color: #333;
 	color: white !important;
+	border-color: #333;
+}
+
+.containercard .containercardbodyblock{
+	height: 400px;
 }
 
 .containercard .card .face{
@@ -155,11 +173,12 @@
     height: 200px;
     transition: 0.5s;
 	color: white !important;
+	background-color: white;
 }
 
 .containercard .card .face.face1{
     position: relative;
-    background: #333;
+    background: black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,6 +254,7 @@
 .white-fill {
   filter: brightness(2) invert(1);
 }
+
 
 		</style>
 	</head>
@@ -545,7 +565,7 @@
 
 			<div role="main" class="main">
 
-				<section class="page-header page-header-modern bg-color-white p-relative">
+				<section class="page-header page-header-modern bg-color-quaternary p-relative">
 					<div class="container">
 						<div class="row py-4">
 							<div class="col-md-10 order-2 order-md-1 align-self-center p-static mt-5">
@@ -571,14 +591,11 @@
 				</section>
 
 				<div class="container pt-4 pb-5 mb-5">
-					<!-- <div class="row"> -->
-						<!-- <div class="col"> -->
-							<!-- <p class="font-weight-medium text-4-5 line-height-5">We Possess 20+ Years Of Experience In ICT Solutions, Cyber Security, Communications.</p> -->
-							<!-- <p class="text-3-5">Our dynamic team of seasoned professionals is always ready to assist with any needs that arise for your business.</p> -->
-						<!-- </div> -->
-					<!-- </div> -->
+					
 					<div class="row pt-1 pb-5 align-items-center">
 						<div class="col-lg-5 text-center p-relative pt-2">
+							<p class="text-5-6" style="line-height: normal;color: gray;font-weight: 500;margin-top: 4px;">Our dynamic team of seasoned<br> professionals is always ready to<br> assist with any needs that  arise<br> for your business.</p>
+
 
 							<div class="appear-animation custom-element-wrapper custom-element-9" data-appear-animation="expandIn" data-appear-animation-delay="1000">
 								<div class="bg-color-primary particle particle-dots w-100 h-100 opacity-3"></div>	
@@ -593,73 +610,59 @@
 							</div>
 
 						</div>
-						<div class="col-lg-7 pt-5 mt-5 pt-lg-0 mt-lg-0">
+						<div class="col-lg-7 pt-3 mt-0 pt-lg-0 mt-lg-0">
 							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
 								<!-- <p class="font-weight-medium text-4-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p> -->
 								<!-- <p class="text-3-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet.</p> -->
 
 								
-								<div class="accordion accordion-sm appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="accordionServices">
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
+								<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="cardServices">
+									<!-- Card 1 -->
+									<div class="card border-radius mb-1 border-0 card-our-services-container">
+										<div class="card-header py-1 bg-color-quaternary">
 											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-primary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3One">
-													Tailored Innovations
-												</a>
+												<span class="text-color-primary font-weight-semibold">Tailored Innovations</span>
 											</h4>
 										</div>
-										<div id="collapse3One" class="collapse card-accordion-our-services show">
-											<div class="card-body">
-												<p class="mb-0">We are pioneers in creating personalized technological solutions that will meet businesses' particular demands and objectives, giving them the tools and approaches that are best suited to your situation.
-
-													</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
-											</div>
+										<div class="card-body" style="padding: 1rem;">
+											<p class="mb-0">We are pioneers in creating personalized technological solutions that will meet businesses' particular demands and objectives, giving them the tools and approaches that are best suited to your situation.</p>
 										</div>
 									</div>
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
+									<!-- Card 2 -->
+									<div class="card border-radius mb-1 border-0 card-our-services-container">
+										<div class="card-header py-1 bg-color-quaternary">
 											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-primary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Two">
-													Industry-Leading Expertise
-												</a>
+												<span class="text-color-primary font-weight-semibold">Industry-Leading Expertise</span>
 											</h4>
 										</div>
-										<div id="collapse3Two" class="collapse card-accordion-our-services">
-											<div class="card-body">
-												<p class="mb-0">Our team of technology experts brings a wealth of experience and a deep understanding of emerging trends, and technology, ensuring that we deliver state-of-the-art solutions that keep you ahead of the curve.</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
-											</div>
+										<div class="card-body" style="padding: 1rem;">
+											<p class="mb-0">Our team of technology experts brings a wealth of experience and a deep understanding of emerging trends, and technology, ensuring that we deliver state-of-the-art solutions that keep you ahead of the curve.</p>
 										</div>
 									</div>
-									
-									<div class="border-radius mb-1 border-0 card-accordion-our-services-container">
-										<div class="card-header py-2 bg-color-quaternary">
+									<!-- Card 3 -->
+									<div class="card border-radius mb-1 border-0 card-our-services-container">
+										<div class="card-header py-1 bg-color-quaternary">
 											<h4 class="card-title m-0">
-												<a class="accordion-toggle text-color-primary font-weight-semibold" data-bs-toggle="collapse" data-bs-parent="#accordionServices" href="#collapse3Four">
-													Strong Global Impact
-												</a>
+												<span class="text-color-primary font-weight-semibold">Strong Global Impact</span>
 											</h4>
 										</div>
-										<div id="collapse3Four" class="collapse card-accordion-our-services">
-											<div class="card-body">
-												<p class="mb-0">With a strong international presence, we combine global insights with localized strategies to effectively address diverse market demands and drive impactful results.</p>
-												<!-- <a href="demo-business-consulting-2-services.html" class="font-weight-bold text-uppercase text-decoration-none d-block mt-3">read more +</a> -->
-											</div>
+										<div class="card-body" style="padding: 1rem;">
+											<p class="mb-0">With a strong international presence, we combine global insights with localized strategies to effectively address diverse market demands and drive impactful results.</p>
 										</div>
 									</div>
-									
 								</div>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 
 				<section class="section border-0 bg-dark m-0 p-relative">
+					<div class="containercardbody">
 					<div class="particles-wrapper z-index-1">
 						<div id="particles-1"></div>
 					</div>
-					<div class="container py-5 p-relative z-index-2">
+					<div class="containercardbodyblock container py-5 p-relative z-index-2">
 						<div class="row">
 							<div class="col text-center">
 
@@ -717,6 +720,7 @@
 						</div>
 						
 					</div>
+				</div>
 				</section>
 
 
@@ -969,7 +973,7 @@
 								</div>
 								<div class="col-lg-6">
 									<h4 class="text-color-light font-weight-bold mb-3">Extra Links</h4>
-									<ul class="list list-unstyled columns-lg-1">
+									<ul class="list list-unstyled columns-lg-3">
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Vendors</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Industry</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Contact Us</a></li>
@@ -1058,7 +1062,7 @@
 
 
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['ICT Solutions', 'Cyber Security', 'Communications'], 'text',['tomato','green','skyblue']);
+consoleText(['ICT Solutions', 'Cyber Security', 'Communications'], 'text',['black','black','black']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
