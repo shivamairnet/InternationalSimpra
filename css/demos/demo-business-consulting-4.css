@@ -171,8 +171,8 @@
 .custom-element-wrapper.custom-element-10 {
 		width: 160px;
 		height: 160px;
-		top: 65%;
-		right: 10%;
+		top: 53%;
+		right: 16%;
 }
 
 .custom-element-wrapper.custom-element-11 {
@@ -183,7 +183,7 @@
 		border-radius: 25px;
 }
 
-.custom-element-wrapper.custom-element-11:before {
+/* .custom-element-wrapper.custom-element-11:before {
 		display: block;
 		content: "";
 		position: absolute;
@@ -194,11 +194,11 @@
 		width: 100%;
 		height: 100%;
 		z-index: -1;
-}
+} */
 
 /* Page Header */
 .page-header {
-		padding-top: 153px;
+		padding-top: 90px;
 		padding-bottom: 0;
 }
 
