@@ -117,7 +117,7 @@
   display:block;
   position:absolute;
   color:#0052CC;
-  top: 56px;;
+  top: 33px;;
   bottom:0;
   left: 142px;;
   right:0;
@@ -153,6 +153,7 @@
     justify-content: space-between;
 	margin-left: 60px;
 	margin-right: 60px;
+	color: black;
 	
 }
 
@@ -160,7 +161,7 @@
     position: relative;
     cursor: pointer;
 	background-color: #333;
-	color: white !important;
+	color: black !important;
 	border-color: #333;
 }
 
@@ -172,19 +173,19 @@
     width: 300px;
     height: 200px;
     transition: 0.5s;
-	color: white !important;
+	color: black !important;
 	background-color: white;
 }
 
 .containercard .card .face.face1{
     position: relative;
-    background: black;
+    background: white;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
     transform: translateY(100px);
-	color: white !important;
+	color: black !important;
 }
 
 .containercard .card:hover .face.face1{
@@ -205,12 +206,22 @@
     max-width: 100px;
 }
 
+.containercard .card:hover .face.face1 .content img{
+	filter: invert(1) brightness(2) grayscale(1);
+}
 .containercard .card .face.face1 .content h3{
     margin: 10px 0 0;
     padding: 0;
-    color: #fff;
+    color: black;
     text-align: center;
     font-size: 1.5em;
+}
+.containercard .card:hover .face.face1 .content h3{
+    /* margin: 10px 0 0; */
+    /* padding: 0; */
+    color: white;
+    /* text-align: center; */
+    /* font-size: 1.5em; */
 }
 
 .containercard .card .face.face2{
@@ -219,6 +230,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+	color: white;
     padding: 20px;
     box-sizing: border-box;
     /* box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8); */
@@ -251,8 +263,18 @@
 }
 
 
-.white-fill {
+/* .white-fill {
   filter: brightness(2) invert(1);
+} */
+
+/* Card hover effect */
+.card-our-services-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-our-services-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -420,7 +442,7 @@
 													</li>
 													<li class="dropdown">
 														<a class="nav-link dropdown-toggle" href="demo-business-consulting-4-services.html">
-															Services
+															Our Products
 														</a>
 														<ul class="dropdown-menu">
 															<li>
@@ -437,7 +459,7 @@
 													<li class="dropdown">
 														<a class="dropdown-item dropdown-toggle" href="#">
 
-															Portfolio
+															Our Offerings
 
 														</a>
 														<ul class="dropdown-menu">
@@ -523,16 +545,37 @@
 															</li>
 														</ul>
 													</li>
+													<li class="dropdown">
+														<a class="nav-link dropdown-toggle" href="demo-business-consulting-4-services.html">
+															Our Clients
+														</a>
+														<ul class="dropdown-menu">
+															<li>
+																<a href="demo-business-consulting-4-services-detail.html" class="dropdown-item">Strategic Planning</a>
+															</li>
+															<li>
+																<a href="demo-business-consulting-4-services-detail.html" class="dropdown-item">Financial Clean-Up</a>
+															</li>
+															<li>
+																<a href="demo-business-consulting-4-services-detail.html" class="dropdown-item">Cash Flow Planning</a>
+															</li>
+														</ul>
+													</li>
 													<li>
 														<a class="nav-link" href="demo-business-consulting-4-team.html">
-															Team
+															Vendors
 														</a>
 													</li>
 													<li>
 														<a class="nav-link" href="demo-business-consulting-4-blog.html">
-															Blog
+															Industry
 														</a>
 													</li>
+													<!-- <li>
+														<a class="nav-link" href="demo-business-consulting-4-blog.html">
+															Industry
+														</a>
+													</li> -->
 												</ul>
 											</nav>
 										</div>
@@ -570,7 +613,7 @@
 						<div class="row py-4">
 							<div class="col-md-10 order-2 order-md-1 align-self-center p-static mt-5">
 								<h1 class="text-color-dark font-weight-bold" style="font-size: 50px;">About Us</h1>
-								<p class="font-weight-medium text-6 line-height-5 mt-5">
+								<p class="font-weight-medium text-6 line-height-5 mt-4">
 									We Possess 20+ Years Of Experience In 
                                  <div class='console-container'>
 	                                 <span id='text'></span>
@@ -591,10 +634,23 @@
 				</section>
 
 				<div class="container pt-4 pb-5 mb-5">
+					<div class="row">
+						<div class="col text-center">
+
+							<div class="divider divider-small divider-small-lg mt-0 text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="0">
+								<hr class="bg-primary border-radius m-auto">
+							</div>
+							<div class="overflow-hidden mb-1">
+								<h3 class="font-weight-semi-bold text-color-grey text-uppercase positive-ls-3 text-4 line-height-2 line-height-sm-7 mb-0 appear-animation" data-appear-animation="maskUp" data-appear-animation-delay="100">About Us!</h3>
+							</div>
+							<h2 class="text-color-dark font-weight-bold text-8 pb-2 mb-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">Your Partner In Providing Next-Generation<br> Technology Solutions!</h2>
+
+						</div>
+					</div>
 					
 					<div class="row pt-1 pb-5 align-items-center">
 						<div class="col-lg-5 text-center p-relative pt-2">
-							<p class="text-5-6" style="line-height: normal;color: gray;font-weight: 500;margin-top: 4px;">Our dynamic team of seasoned<br> professionals is always ready to<br> assist with any needs that  arise<br> for your business.</p>
+							<p class="text-5-6" style="line-height: normal;color: #969696; font-weight: 600;margin-top: 4px;text-align: left;">Our Dynamic Team of Seasoned <br>Professionals Are Always Ready To <br>Assist You With Any Needs That<br> Arise For Your Business</p>
 
 
 							<div class="appear-animation custom-element-wrapper custom-element-9" data-appear-animation="expandIn" data-appear-animation-delay="1000">
@@ -612,56 +668,61 @@
 						</div>
 						<div class="col-lg-7 pt-3 mt-0 pt-lg-0 mt-lg-0">
 							<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="300">
-								<!-- <p class="font-weight-medium text-4-5 line-height-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet ullamcorper dolor, quis sollicitudin.</p> -->
+								<!-- <p class="font-weight-medium text-4-5 line-height-5">Our dynamic team of seasoned professionals is always ready to assist with any needs that arise for your business.</p> -->
 								<!-- <p class="text-3-5">Cras a elit sit amet leo accumsan volutpat. Suspendisse hendrerit vehicula leo, vel efficitur felis ultrices non. Integer aliquet.</p> -->
 
-								
 								<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="500" id="cardServices">
 									<!-- Card 1 -->
-									<div class="card border-radius mb-1 border-0 card-our-services-container">
-										<div class="card-header py-1 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<span class="text-color-primary font-weight-semibold">Tailored Innovations</span>
-											</h4>
+								
+									<div class="card border-radius mb-2 border-0 card-our-services-container">
+										<div class="card-header py-1" style="background-color: transparent; border: none;">
+										  <h4 class="card-title m-0 d-flex align-items-center">
+											<img src="img\MainWebsiteImages\Home Page\Innovation.svg" alt="Icon" class="me-2" style="width: 30px; height: 24px;"> <!-- Replace with your image URL -->
+											<span class="text-color-primary font-weight-semibold">Tailored Innovations</span>
+										  </h4>
 										</div>
-										<div class="card-body" style="padding: 1rem;">
+										<div class="card-body" style="padding: 1rem; background-color: transparent;">
 											<p class="mb-0">We are pioneers in creating personalized technological solutions that will meet businesses' particular demands and objectives, giving them the tools and approaches that are best suited to your situation.</p>
 										</div>
-									</div>
+									  </div>
+									  <hr>
 									<!-- Card 2 -->
-									<div class="card border-radius mb-1 border-0 card-our-services-container">
-										<div class="card-header py-1 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<span class="text-color-primary font-weight-semibold">Industry-Leading Expertise</span>
-											</h4>
+									<div class="card border-radius mb-2 border-0 card-our-services-container">
+										<div class="card-header py-1" style="background-color: transparent; border: none;">
+										  <h4 class="card-title m-0 d-flex align-items-center">
+											<img src="img\MainWebsiteImages\Home Page\Industry Experts.svg" alt="Icon" class="me-2" style="width: 30px; height: 24px;"> <!-- Replace with your image URL -->
+											<span class="text-color-primary font-weight-semibold">Industry-Leading Expertise</span>
+										  </h4>
 										</div>
-										<div class="card-body" style="padding: 1rem;">
+										<div class="card-body" style="padding: 1rem; background-color: transparent;">
 											<p class="mb-0">Our team of technology experts brings a wealth of experience and a deep understanding of emerging trends, and technology, ensuring that we deliver state-of-the-art solutions that keep you ahead of the curve.</p>
 										</div>
-									</div>
+									  </div>
+									  <hr>
 									<!-- Card 3 -->
-									<div class="card border-radius mb-1 border-0 card-our-services-container">
-										<div class="card-header py-1 bg-color-quaternary">
-											<h4 class="card-title m-0">
-												<span class="text-color-primary font-weight-semibold">Strong Global Impact</span>
-											</h4>
+									<div class="card border-radius mb-2 border-0 card-our-services-container">
+										<div class="card-header py-1" style="background-color: transparent; border: none;">
+										  <h4 class="card-title m-0 d-flex align-items-center">
+											<img src="img\MainWebsiteImages\Home Page\Global Impact.svg" alt="Icon" class="me-2" style="width: 30px; height: 24px;"> <!-- Replace with your image URL -->
+											<span class="text-color-primary font-weight-semibold">Strong Global Impact</span>
+										  </h4>
 										</div>
-										<div class="card-body" style="padding: 1rem;">
-											<p class="mb-0">With a strong international presence, we combine global insights with localized strategies to effectively address diverse market demands and drive impactful results.</p>
+										<div class="card-body" style="padding: 1rem; background-color: transparent;">
+										  <p class="mb-0">With a strong international presence, we combine global insights with localized strategies to effectively address diverse market demands and drive impactful results.</p>
 										</div>
-									</div>
+									  </div>
+									  
 								</div>
-								
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<section class="section border-0 bg-dark m-0 p-relative">
+				<section class="section border-0 bg-white m-0 p-relative">
 					<div class="containercardbody">
-					<div class="particles-wrapper z-index-1">
+					<!-- <div class="particles-wrapper z-index-1">
 						<div id="particles-1"></div>
-					</div>
+					</div> -->
 					<div class="containercardbodyblock container py-5 p-relative z-index-2">
 						<div class="row">
 							<div class="col text-center">
@@ -679,7 +740,7 @@
 							<div class="card">
 								<div class="face face1">
 									<div class="content">
-										<img src="img\MainWebsiteImages\About Us\vision (2).svg" class="white-fill">
+										<img src="img\MainWebsiteImages\About Us\vision (2).svg">
 										<h3>Vision</h3>
 									</div>
 								</div>
@@ -693,7 +754,7 @@
 							<div class="card">
 								<div class="face face1">
 									<div class="content">
-										<img src="img\MainWebsiteImages\About Us\mission.svg" class="white-fill">
+										<img src="img\MainWebsiteImages\About Us\mission.svg">
 										<h3>Mission</h3>
 									</div>
 								</div>
@@ -706,8 +767,8 @@
 							</div>
 							<div class="card">
 								<div class="face face1">
-									<div class="content">
-										<img src="img\MainWebsiteImages\About Us\Commitment.svg" class="white-fill">
+									<div class="content" style="margin-left: 25px;">
+										<img src="img\MainWebsiteImages\About Us\Commitment.svg">
 										<h3>Commitment</h3>
 									</div>
 								</div>
@@ -924,8 +985,8 @@
 							<a href="demo-business-consulting-4.html" class="text-decoration-none">
 								<img src="img\MainWebsiteImages\Home Page\simpra-logo-transparent-1.webp" width="150" height="120" class="img-fluid mb-4" alt="Porto" />
 							</a>
-							<p class="text-3-5 font-weight-medium pe-lg-2">Address - Office No 3007, Tower AA1, Mazaya Business Avenue, DUBAI, UAE. </p>
-							<ul class="list list-unstyled">
+							<p class="text-3-5 font-weight-medium pe-lg-2">Address - Office no 3007, Tower AA1,<br> Mazaya Business Avenue, PO. BOX: 391935.<br> DUBAI, UAE.</p>
+							<!-- <ul class="list list-unstyled">
 								<li class="d-flex align-items-center mb-4">
 									<i class="icon icon-envelope text-color-light text-5 font-weight-bold position-relative top-1 me-3-5"></i>
 									<a href="info@simpra.ae" class="d-inline-flex align-items-center text-decoration-none text-color-light text-color-hover-primary font-weight-semibold text-3-4">info@simpra.ae</a>
@@ -956,7 +1017,7 @@
 										<i class="fab fa-linkedin text-color-light"></i>
 									</a>
 								</li>
-							</ul>
+							</ul> -->
 						</div>
 						<div class="col-lg-8">
 							<div class="row mb-5-5">
@@ -966,17 +1027,43 @@
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Home</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">About Us</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Our Products</a></li>
-										<li><a href="#" class="text-color-grey text-color-hover-primary">Our Clients</a></li>
-										<li><a href="#" class="text-color-grey text-color-hover-primary">Our Offerings</a></li>
 										
-									</ul>
-								</div>
-								<div class="col-lg-6">
-									<h4 class="text-color-light font-weight-bold mb-3">Extra Links</h4>
-									<ul class="list list-unstyled columns-lg-3">
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Our Offerings</a></li>	
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Our Clients</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Vendors</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Industry</a></li>
 										<li><a href="#" class="text-color-grey text-color-hover-primary">Contact Us</a></li>
+									</ul>
+
+									<!-- <h4 class="text-color-light font-weight-bold mb-3">Extra Links</h4>
+									<ul class="list list-unstyled columns-lg-2">
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Vendors</a></li>
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Industry</a></li>
+										<li><a href="#" class="text-color-grey text-color-hover-primary">Contact Us</a></li>
+									</ul> -->
+								</div>
+								<div class="col-lg-6">
+									<!-- <h4 class="text-color-light font-weight-bold mb-3">Extra Links</h4> -->
+									<ul class="list list-unstyled columns-lg-1">
+										<h4 class="text-color-light font-weight-bold mb-3">Email:</h4>
+										<li class="d-flex align-items-center mb-4">
+											<i class="icon icon-envelope text-color-light font-weight-bold position-relative top-1 me-3-5"></i>
+											<a href="info@simpra.ae" class="d-inline-flex align-items-center text-decoration-none text-color-grey text-color-hover-primary font-weight-semibold">info@simpra.ae</a>
+										</li>
+										<h4 class="text-color-light font-weight-bold mb-3">Phone Number:</h4>
+										<li class="d-flex align-items-center mb-4">
+											<i class="icon icon-phone text-color-light font-weight-bold position-relative top-1 me-3-5"></i>
+											<a href="tel: 97143948809" class="d-inline-flex align-items-center text-decoration-none text-color-grey text-color-hover-primary font-weight-semibold">+971 43948809</a>
+										</li>
+										<h4 class="text-color-light font-weight-bold mb-3">Social Media:</h4>
+										<li class="social-icons-linkedin">
+											<a href="http://www.linkedin.com/" target="_blank" title="Linkedin">
+												<i class="fab fa-linkedin text-color-white"></i>
+											</a>
+										</li>
+										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Vendors</a></li> -->
+										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Industry</a></li> -->
+										<!-- <li><a href="#" class="text-color-grey text-color-hover-primary">Contact Us</a></li> -->
 									</ul>
 								</div>
 							</div>
